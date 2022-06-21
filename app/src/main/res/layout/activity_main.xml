@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="MainActivity">
+
+    <TextView
+        android:id="@+id/mainScreen"
+        android:layout_width="match_parent"
+        android:layout_height="236dp"
+        android:ellipsize="start"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:fontFamily="sans-serif-thin"
+        android:gravity="end"
+        android:scrollHorizontally="true"
+        android:singleLine="true"
+        android:textSize="64sp"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/preResult"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="#FFFFFF"
+        android:elevation="1dp"
+        android:ellipsize="start"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:fontFamily="sans-serif-thin"
+        android:gravity="end"
+        android:scrollHorizontally="true"
+        android:singleLine="true"
+        android:textSize="32sp"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <Button
+                android:id="@+id/btnClear"
+                style="@style/CommonButtonStyle"
+                android:text="@string/clear"
+                android:textFontWeight="400"
+                android:tooltipText="Clear" />
+
+            <Button
+                android:id="@+id/btnPercent"
+                style="@style/CommonButtonStyle"
+                android:text="@string/modulus"
+                android:textFontWeight="400"
+                android:tooltipText="Modulus" />
+
+            <ImageButton
+                android:id="@+id/btnBackspace"
+                style="@style/CommonButtonStyle"
+                android:contentDescription="@string/backspace"
+                android:src="@drawable/ic_outline_backspace_24"
+                android:tooltipText="Backspace" />
+
+            <Button
+                android:id="@+id/btnDivide"
+                style="@style/EndButtonStyle"
+                android:text="@string/divide"
+                android:textColor="#00A5FF"
+                android:textFontWeight="400" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <Button
+                android:id="@+id/btn7"
+                style="@style/CommonButtonStyle"
+                android:text="@string/_7"
+                android:textFontWeight="300" />
+
+            <Button
+                android:id="@+id/btn8"
+                style="@style/CommonButtonStyle"
+                android:text="@string/_8"
+                android:textFontWeight="300" />
+
+            <Button
+                android:id="@+id/btn9"
+                style="@style/CommonButtonStyle"
+                android:text="@string/_9"
+                android:textFontWeight="300" />
+
+            <Button
+                android:id="@+id/btnMultiply"
+                style="@style/EndButtonStyle"
+                android:text="@string/multiply"
+                android:textColor="#00A5FF"
+                android:textFontWeight="400" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <Button
+                android:id="@+id/btn4"
+                style="@style/CommonButtonStyle"
+                android:text="@string/_4"
+                android:textFontWeight="300" />
+
+            <Button
+                android:id="@+id/btn5"
+                style="@style/CommonButtonStyle"
+                android:text="@string/_5"
+                android:textFontWeight="300" />
+
+            <Button
+                android:id="@+id/btn6"
+                style="@style/CommonButtonStyle"
+                android:text="@string/_6"
+                android:textFontWeight="300" />
+
+            <Button
+                android:id="@+id/btnMinus"
+                style="@style/EndButtonStyle"
+                android:text="@string/minus"
+                android:textColor="#00A5FF"
+                android:textFontWeight="400" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <Button
+                android:id="@+id/btn1"
+                style="@style/CommonButtonStyle"
+                android:text="@string/_1"
+                android:textFontWeight="300" />
+
+            <Button
+                android:id="@+id/btn2"
+                style="@style/CommonButtonStyle"
+                android:text="@string/_2"
+                android:textFontWeight="300" />
+
+            <Button
+                android:id="@+id/btn3"
+                style="@style/CommonButtonStyle"
+                android:text="@string/_3"
+                android:textFontWeight="300" />
+
+            <Button
+                android:id="@+id/btnPlus"
+                style="@style/EndButtonStyle"
+                android:text="@string/plus"
+                android:textColor="#00A5FF"
+                android:textFontWeight="400" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <Button
+                android:id="@+id/bt00"
+                style="@style/CommonButtonStyle"
+                android:text="@string/_00"
+                android:textFontWeight="300" />
+
+            <Button
+                android:id="@+id/btn0"
+                style="@style/CommonButtonStyle"
+                android:text="@string/_0"
+                android:textFontWeight="300" />
+
+            <Button
+                android:id="@+id/btnDot"
+                style="@style/CommonButtonStyle"
+                android:text="@string/dot"
+                android:textFontWeight="300" />
+
+            <Button
+                android:id="@+id/btnEqual"
+                style="@style/EndButtonStyle"
+                android:text="@string/equal"
+                android:textFontWeight="400" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
